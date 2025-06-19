@@ -1,0 +1,28 @@
+crates.io adalah repositori resmi untuk package (crate) Rust, mirip seperti:
+
+- npm untuk JavaScript,
+
+- PyPI untuk Python,
+
+- maven Central untuk Java,
+
+- atau NuGet untuk .NET
+
+| Fitur                    | Penjelasan                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+|  **Menyediakan Crate** | Tempat ribuan crate (library/modul) Rust tersedia untuk di-*install* dan digunakan di proyek. |
+|  **Pencarian Crate**   | Bisa mencari crate berdasarkan nama, deskripsi, popularitas, dan tag.                         |
+|  **Statistik Crate**   | Menyediakan informasi tentang jumlah unduhan, versi terbaru, dan dependensi.                  |
+|  **Publikasi Crate**   | Developer bisa *upload* crate mereka ke `crates.io` agar bisa digunakan oleh komunitas Rust.  |
+|  **Integrasi Cargo**   | `crates.io` langsung digunakan oleh `cargo`, jadi mudah untuk meng-install crate.             |
+
+Crates.io merupakan pusat distribusi resmi library (crate) dalam ekosistem Rust yang memudahkan developer untuk mencari, mengelola, dan menggunakan pustaka eksternal secara otomatis melalui cargo. Dengan crates.io, pengembangan aplikasi Rust menjadi lebih efisien, terstandarisasi, dan terhubung dengan komunitas global yang saling berbagi modul reusable secara terbuka.
+
+
+
+
+
+
+
+
+

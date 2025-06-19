@@ -1,0 +1,13 @@
+struct Person {
+    name: String,
+}
+
+fn rename(p: &mut Person, new_name: String) {
+    p.name = new_name;
+}
+
+fn main() {
+    let mut person = Person { name: String::from("John") };
+    rename(&mut person, String::from("Jane"));
+    println!("New name: {}", person.name);
+}

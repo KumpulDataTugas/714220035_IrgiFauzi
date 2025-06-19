@@ -1,0 +1,72 @@
+=======================================
+PERBEDAAN BINARY CRATE DAN LIBRARY CRATE
+=======================================
+
+1. PENGERTIAN
+-------------
+- Binary Crate:
+  Merupakan program utama yang dapat dijalankan langsung. Biasanya memiliki fungsi `fn main()` dan digunakan untuk aplikasi CLI, GUI, game, dll.
+
+- Library Crate:
+  Merupakan kumpulan fungsi atau modul yang tidak dijalankan secara langsung, melainkan dipanggil dari file lain atau digunakan sebagai dependency.
+
+2. STRUKTUR FILE
+----------------
+- Binary Crate: 
+  Memiliki file utama di:   src/main.rs
+
+- Library Crate:
+  Memiliki file utama di:   src/lib.rs
+
+3. FUNGSI UTAMA
+---------------
+- Binary Crate:
+  Wajib memiliki fungsi:
+      fn main() {
+          // kode program utama
+      }
+
+- Library Crate:
+  Tidak menggunakan `main()`, tapi menyusun modul atau fungsi seperti:
+      pub fn halo() {
+          println!("Halo dari library!");
+      }
+
+4. PERINTAH MENJALANKAN
+------------------------
+- Binary Crate:
+  cargo run
+
+- Library Crate:
+  Tidak bisa dijalankan langsung. Digunakan dengan `use` atau oleh crate lain. Bisa dijalankan untuk testing:
+  cargo test
+  cargo build
+  cargo publish
+
+5. CONTOH
+---------
+
+[Binary Crate - src/main.rs]
+-----------------------------
+fn main() {
+    println!("Program utama dijalankan");
+}
+
+[Library Crate - src/lib.rs]
+-----------------------------
+pub fn halo() {
+    println!("Halo dari library!");
+}
+
+[Memanggil library dari main]
+-----------------------------
+use crate::halo;
+
+fn main() {
+    halo();
+}
+
+6. KESIMPULAN
+-------------
+Binary crate digunakan untuk membuat aplikasi utama yang bisa dijalankan, sedangkan library crate digunakan untuk membuat fungsi-fungsi atau modul yang dapat digunakan kembali. Keduanya bisa digunakan bersamaan untuk menciptakan proyek Rust yang modular dan efisien.
+

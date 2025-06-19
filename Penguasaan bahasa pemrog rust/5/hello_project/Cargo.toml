@@ -1,0 +1,8 @@
+[package]
+name = "hello_project" #Nama package (juga nama binary default)
+version = "0.1.0" #Versi package mengikuti semver (semantic versioning)
+edition = "2024" #Versi fitur Rust yang digunakan (2015, 2018, 2021)
+
+# [dependencies] adalah bagian untuk menambahkan crate/library eksternal
+[dependencies]
+rand = "0.9.1"

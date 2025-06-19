@@ -1,0 +1,1 @@
+C:\Users\Irgi\ Achmad\ Fauzi\Documents\rust_ai\714220035_IrgiFauzi\Penguasaan\ bahasa\ pemrog\ rust\5\hello_project\target\debug\hello_project.exe: C:\Users\Irgi\ Achmad\ Fauzi\Documents\rust_ai\714220035_IrgiFauzi\Penguasaan\ bahasa\ pemrog\ rust\5\hello_project\src\main.rs
